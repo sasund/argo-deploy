@@ -1,0 +1,21 @@
+version: '3'
+
+tasks:
+  launch:
+    cmds:
+      - multipass launch -n k3s --memory 4G --disk 10G --cpus 4 --cloud-init cloud-config.yaml
+  start:
+    cmds:
+      - multipass start k3s
+  stop:
+    cmds:
+      - multipass stop k3s
+  destroy:
+    cmds:
+      - multipass purge k3s
+  shell:
+    cmds:
+      - multipass shell k3s
+  default:
+    cmds:
+      - echo "multipass tasks for managing k3s vm"

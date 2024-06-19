@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  init-argo:
+    cmds:
+    - ./scripts/init-argo.sh
+  default:
+    cmds:
+      - echo " tasks for setup argo with infra"
