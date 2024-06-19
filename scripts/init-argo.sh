@@ -64,7 +64,7 @@ installArgoApplications() {
   message ">>> deploying ArgoCD infra-applications"
   envsubst <$ARGO_DIR/applications-infra.yaml | kubectl apply -f -
   envsubst <$ARGO_DIR/applications-observability.yaml | kubectl apply -f -
-  envsubst <$ARGO_DIR/applications-cloud-diplomats.yaml | kubectl apply -f -
+  #envsubst <$ARGO_DIR/applications-nbno.yaml | kubectl apply -f -
   # envsubst <$ARGO_DIR/applications-data.yaml | kubectl apply -f -
   # envsubst <$ARGO_DIR/applications-experimental.yaml | kubectl apply -f -
 
