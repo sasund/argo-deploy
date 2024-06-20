@@ -66,7 +66,7 @@ installArgoApplications() {
   # envsubst <$ARGO_DIR/applications-infra-extra.yaml | kubectl apply -f -
   envsubst <$ARGO_DIR/applications-observability.yaml | kubectl apply -f -
   # envsubst <$ARGO_DIR/applications-backendsdev.yaml | kubectl apply -f -
-  # envsubst <$ARGO_DIR/applications-nbno.yaml | kubectl apply -f -
+  envsubst <$ARGO_DIR/applications-nbno.yaml | kubectl apply -f -
   # envsubst <$ARGO_DIR/applications-sasit.yaml | kubectl apply -f -
   # envsubst <$ARGO_DIR/applications-data.yaml | kubectl apply -f -
   # envsubst <$ARGO_DIR/applications-experimental.yaml | kubectl apply -f -
