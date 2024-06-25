@@ -38,4 +38,4 @@ spec:
           
   destination:
     server: https://kubernetes.default.svc
-    namespace: nbno
+    namespace: sasit
