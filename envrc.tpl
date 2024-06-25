@@ -10,6 +10,12 @@ export ENV="local"
 export DNS_ENV="-$ENV"
 export DNS_DOMAIN="cloud-localtest.no"
 
+# Build
+export PROXY_NB=''
+export DOCKER_REGISTRY_NB=''
+export DOCKER_HARBOR_USER=''
+export DOCKER_HARBOR_PASS=''
+
 # Harbor
 export DOCKER_HARBOR_USER=''
 export DOCKER_HARBOR_PASS=''
