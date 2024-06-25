@@ -111,3 +111,4 @@ Desktop.ini
 !gradle/wrapper/gradle-wrapper.jar
 
 .vscode/*-launch.json
+.envrc
