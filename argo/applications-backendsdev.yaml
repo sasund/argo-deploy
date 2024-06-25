@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-apps-cloud-nbno
+  name: argo-apps-cloud-backendsdev
   namespace: argocd
   
   finalizers:

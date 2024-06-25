@@ -1,9 +1,31 @@
 version: '3'
 
 tasks:
-  init-argo:
-    cmds:
-    - ./scripts/init-argo.sh
   default:
     cmds:
       - echo " tasks for setup argo with infra"
+  init-k3s:
+    desc: "Initialize k8s with k3s"
+    cmds: 
+      - ./scripts/init-k3s.sh
+  uninstall-k3s:
+    desc: "Uninstall k3s"
+    cmds: 
+      - sudo k3s-killall.sh
+      - sudo k3s-uninstall.sh
+  init-argo:
+    desc: "Initialize argo with infra"
+    cmds:
+    - |
+      if [ ! -f .envrc ]; then
+        echo "Must have .envrc file to run this task. Run 'task create-envrc' to create .envrc file."
+      else
+        ./scripts/init-argo.sh
+      fi
+  create-envrc:
+    desc: "Create .envrc file if it does not exist"
+    cmds:
+      - | 
+        if [ ! -f .envrc ]; then
+          cat envrc.tpl > .envrc
+        fi
