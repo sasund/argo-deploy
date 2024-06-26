@@ -112,3 +112,7 @@ Desktop.ini
 
 .vscode/*-launch.json
 .envrc
+.ssh
+.ssh/*
+.secret
+.secret/*

@@ -35,6 +35,17 @@ spec:
           value: ${DNS_ENV}
         - name: GITHUB_REPO
           value: ${GITHUB_REPO}
+        - name: GITHUB_ACCESS_ARGO
+          value: ${GITHUB_ACCESS_ARGO}
+        - name: GITHUB_ACCESS_ARGO_EVENTS
+          value: ${GITHUB_ACCESS_ARGO_EVENTS}
+        - name: DEPLOY_KEY_ARGOCD
+          value: ${DEPLOY_KEY_ARGOCD}
+        - name: DEPLOY_KEY_ARGO
+          value: ${DEPLOY_KEY_ARGO}
+        - name: SOURCE_KEY_ARGO
+          value: ${SOURCE_KEY_ARGO}
+
           
   destination:
     server: https://kubernetes.default.svc
